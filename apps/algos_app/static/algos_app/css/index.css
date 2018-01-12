@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+section {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.vertical-menu {
+    height: 100vh;
+    left: 20vw;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: table;
+    overflow: hidden;
+}
+
+.vertical-menu p {
+    font-size: 4.95vh;
+}
+
+.vertical-menu a {
+    color: white;
+}
+
+code {
+    font-size: 15vh;
+    background: none;
+    color: white;
+    transform: rotate(-90deg) translate(0, -250%);
+    transform-origin: middle;
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    left: 20vw;
+    text-align: center;
+}
+
+footer {
+    height: 10%;
+    width: 90%;
+    border-top: 0.5px solid rgb(212,210,211);
+    text-align: center;
+}
