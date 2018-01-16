@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'apps.algos_app',
+    'apps.about_app',
     'apps.fundamentals_app',
     'apps.stringsarrays_app',
     'apps.linkedlists_app',

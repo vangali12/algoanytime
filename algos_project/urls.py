@@ -17,7 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('apps.algos_app.urls')),
     url(r'^fundamentals/', include('apps.fundamentals_app.urls')),
     url(r'^stringsArrays/', include('apps.stringsarrays_app.urls')),
     url(r'^linkedLists/', include('apps.linkedlists_app.urls')),
@@ -26,5 +25,6 @@ urlpatterns = [
     url(r'^sorts/', include('apps.sorts_app.urls')),
     url(r'^bsts/', include('apps.bsts_app.urls')),
     url(r'^graphs/', include('apps.graphs_app.urls')),
-    url(r'^about$', include('apps.algos_app.urls'))
+    url(r'^about/', include('apps.about_app.urls')),
+    url(r'^$', include('apps.algos_app.urls')),
 ]
