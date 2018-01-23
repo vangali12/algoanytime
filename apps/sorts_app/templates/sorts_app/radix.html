@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'fundamentals_app/css/codePage.css' %}">
-    <title>Document</title>
+    <title>Radix Sort</title>
 </head>
 <body style="background: url('{% static "fundamentals_app/images/background3.jpeg"%}') no-repeat center center fixed; background-size:cover";>
     <div class="main container-fluid">
     <section class="container-fluid">
         <div class="description">
             <h2>[Radix Sort]</h2>
-            <p>Input: string of any length, censoring word</p>
-            <p>Output: Boolean true or false</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Input: Unsorted Array</p>
+            <p>Output: Sorted Array</p>
+            {% load static %}
+            <img src="{% static 'sorts_app/images/RadixSort.jpg' %}" style="width: 100%;">
+            <p></p>
+            <p>Begin by sorting all of the values by the one's place. Then keeping the order, combine the values back into a single array. Continue by sorting the values by the tens, hundreds, until you sort by the number of places of the largest value of your set. Your final combined array is your ordered array.</p>
         </div>
         <div class="box">
 <pre><code>function radixSort(arr) {

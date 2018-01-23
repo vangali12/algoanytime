@@ -14,11 +14,14 @@
     <section class="container-fluid">
         <div class="description">
             <h2>[Add Node Before]</h2>
-            <p>Input: string of any length, censoring word</p>
-            <p>Output: Boolean true or false</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Input: Value of new node, the value of the node to add your new node before</p>
+            <p>Output: The Sll instance</p>
+            <p>Since the data structure of Slls do not allow for the indexing of nodes, you must find a way to identify the specific location where a node needs to be added. You will need to implement a runner to iterate through the elements of the Sll to reach the point where you want to add your Sll. You will additionally need a checker that iterates one spot ahead of the runner to confirm or deny whether the position of the checker is where the node needs to be added. Remember, each node in a <span style="font-style=italic">Singly</span> Linked Lists only had one pointer: top the next node. Once you've iterated past a node, there's no way to go back to it, so in order to add a node before a specific point in the Sll, you have to have a runner and a checker to keep track of where you are.</p>
+            <p>Assumptions:</p>
+            <p>The user will submit the correct input values and types.</p>
+            <p>Edge Cases:</p>
+            <p>What do you do when you are given an empty Sll?</p>
+            <p>What happens if the chk value (the value to insert the node before) doesn't exist?</p>
         </div>
         <div class="box">
 <pre><code>Sll.prototype.addBefore = function(val, chk) {

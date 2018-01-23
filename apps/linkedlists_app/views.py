@@ -72,3 +72,6 @@ def splitAt(request):
 
 def addNodeValues(request):
     return render(request, 'linkedlists_app/addNodeValues.html')
+
+def hasLoop(request):
+    return render(request, 'linkedlists_app/hasLoop.html')

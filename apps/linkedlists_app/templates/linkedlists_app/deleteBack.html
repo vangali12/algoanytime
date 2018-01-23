@@ -14,28 +14,25 @@
     <section class="container-fluid">
         <div class="description">
             <h2>[Delete From Back]</h2>
-            <p>Input: string of any length, censoring word</p>
-            <p>Output: Boolean true or false</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Input: N/A</p>
+            <p>Output: The Sll instance</p>
+            <p>Iterate through the given Sll and delete the last node. By looking back at the node constructor, we know that a newly created node will always have a next value of null. As new nodes are added, the last node in the chain points to the newly added node. Therefore, the last node in the Sll will have a next value of null. Using this logic, you are able to iterate through the Sll, locate the last node, and set the "next" attribute of the previous node to null. Once the association to the last node is removed, the node will be disassociated from the Sll and eventually removed from memory. </p>
         </div>
         <div class="box">
 <pre><code>Sll.prototype.delBack = function() {
-	if (!this.head) {
-		return false;
-	} else if (!this.head.next) {
-		this.head = null;
-	} else {
-		var runner = this.head;
-		while (runner.next) {
-			if (runner.next == null) {
-				runner.next = null;
-			}
-		}
-	}
-	return self;
-}</code></pre>
+        if (!this.head) {
+            return false;
+        } else if (!this.head.next) {
+            this.head = null;
+        } else {
+            var runner = this.head;
+            while (runner.next.next) {
+                runner = runner.next;
+            }
+            runner.next = null;
+        }
+        return this;
+    }</code></pre>
         </div>
         <div class="vertical-menu">
             <p><a href="/" class="active">Home</a></p>

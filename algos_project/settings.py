@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'apps.recursion_app',
     'apps.sorts_app',
     'apps.bsts_app',
+    'apps.heaps_app',
     'apps.graphs_app',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^printAllNodes$', views.printAllNodes),
     url(r'^removeFront$', views.removeFront),
     url(r'^splitAt$', views.splitAt),
-    url(r'^addNodeValues$', views.addNodeValues),    
+    url(r'^addNodeValues$', views.addNodeValues),
+    url(r'^hasLoop$', views.hasLoop),    
 ]

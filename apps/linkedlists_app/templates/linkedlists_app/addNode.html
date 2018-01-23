@@ -14,11 +14,12 @@
     <section class="container-fluid">
         <div class="description">
             <h2>[Add Node]</h2>
-            <p>Input: string of any length, censoring word</p>
-            <p>Output: Boolean true or false</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p>Input: Value of new node</p>
+            <p>Output: The Sll instance</p>
+            <p>Conceptually, the Sll data structure does not allow for quick retrieval of a specific node. Nodes are not indexed like the array data structure. Therefore, in order to add a new node, you must traverse through each of the elements in the Sll until reaching the end of the Sll, where the new node will be placed.</p>
+            <p>Finally, the return value should be the instance of the Sll to allow for chaining of node additions.</p>
+            <p>Edge Cases:</p>
+            <p>What do you do when you are given an empty Sll?</p>
         </div>
         <div class="box">
 <pre><code>Sll.prototype.add = function(val) {

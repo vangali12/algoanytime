@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^recursion/', include('apps.recursion_app.urls')),
     url(r'^sorts/', include('apps.sorts_app.urls')),
     url(r'^bsts/', include('apps.bsts_app.urls')),
+    url(r'^heaps/', include('apps.heaps_app.urls')),
     url(r'^graphs/', include('apps.graphs_app.urls')),
     url(r'^about/', include('apps.about_app.urls')),
     url(r'^$', include('apps.algos_app.urls')),

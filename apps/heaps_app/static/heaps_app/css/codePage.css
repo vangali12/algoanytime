@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+section {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.description {
+    border: 2px solid gray;
+    background: hsla(175, 17%, 85%, 0.5);
+    width: 25vw;
+    height: 90vh;
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    vertical-align: middle;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    font-family: Helvetica;
+}
+
+pre {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 2px solid gray;
+    background: hsla(175, 17%, 85%, 0.5);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.box {
+    width: 30vw;
+    height: 60vh;
+    text-align: left;
+    position: fixed;
+    top: 5vh;
+    left: 35vw;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.vertical-menu {
+    height: 40vh;
+    right: 8vw;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    padding-top: 5vh;
+    display: table;
+    overflow: hidden;
+}
+
+.vertical-menu p {
+    font-size: 3vh;
+    line-height: 3.8888vh;
+}
+
+.vertical-menu a {
+    color: hsl(175, 6%, 40%);
+}

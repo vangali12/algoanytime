@@ -32,7 +32,8 @@ section {
 }
 
 .vertical-menu p {
-    font-size: 4.95vh;
+    font-size: 4.5vh;
+    line-height: 6vh;
 }
 
 .vertical-menu a {
